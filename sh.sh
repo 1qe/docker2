@@ -1,5 +1,9 @@
 apt-get update
-apt-get install -y openssh-server
+apt-get install -y openssh-server jupyter 
+
+jupyter-notebook --generate-config >/dev/null
+
+
 echo root:123456 | chpasswd
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 chmod +x natfrp
