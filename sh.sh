@@ -4,8 +4,7 @@ apt-get install -y openssh-server jupyter python3-pip git >/dev/null
 jupyter-notebook --generate-config >/dev/null
 mv jupyter_notebook_config.py .jupyter/
 
-mkdir .ssh && mv id_rsa* .ssh/
-chmod 600 .ssh/id_rsa
+#git
 echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
 echo root:123456 | chpasswd
