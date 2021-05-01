@@ -2,6 +2,7 @@ apt-get update
 apt-get install -y openssh-server jupyter 
 
 jupyter-notebook --generate-config >/dev/null
+mv jupyter_notebook_config.py .jupyter/
 
 
 echo root:123456 | chpasswd
