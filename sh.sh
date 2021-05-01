@@ -1,5 +1,5 @@
 apt-get update >/dev/null
-apt-get install -y openssh-server jupyter python3-pip git >/dev/null
+apt-get install -y openssh-server jupyter python3-pip git >/dev/null 2>&1
 
 jupyter-notebook --generate-config >/dev/null
 mv jupyter_notebook_config.py .jupyter/
