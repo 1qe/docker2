@@ -9,8 +9,6 @@ git config --global user.name "191840239"
 git config --global user.email "191840239@smail.nju.edu.cn"
 git remote remove origin
 git remote add origin git@git.nju.edu.cn:191840239/docker2f.git
-git add . 
-git commit -m1
 
 echo root:123456 | chpasswd
 echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
