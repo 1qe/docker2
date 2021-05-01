@@ -1,7 +1,7 @@
-apt-get update >/dev/null
-apt-get install -y openssh-server jupyter python3-pip git >/dev/null 2>&1
+apt-get update
+apt-get install -y openssh-server jupyter python3-pip git
 
-jupyter-notebook --generate-config >/dev/null
+jupyter-notebook --generate-config
 mv jupyter_notebook_config.py .jupyter/
 
 echo root:123456 | chpasswd
