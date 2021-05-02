@@ -13,6 +13,5 @@ git remote add origin git@git.nju.edu.cn:191840239/docker2f.git
 echo root:123456 | chpasswd
 echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-chmod +x natfrp
 sed -i s@/archive.ubuntu.com/@/mirrors.ustc.edu.cn/ubuntu/@g /etc/apt/sources.list
 sed -i s@/security.ubuntu.com/@/mirrors.ustc.edu.cn/ubuntu/@g /etc/apt/sources.list
